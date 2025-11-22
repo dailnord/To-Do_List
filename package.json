@@ -7,8 +7,24 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ToDoListApp": "node dist/ToDoListApp/server/server.mjs"
+    "serve:ssr:ToDoListApp": "node dist/ToDoListApp/server/server.mjs",
+
+    "dev": "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"blue,green\" \"npm run backend\" \"npm run frontend\"",
+    "frontend": "ng serve --port 4200 --open",
+    "backend": "cd ../ToDoList && dotnet run --urls=http://localhost:5205",
+    
+    "kill-ports": "npx kill-port 4200 && npx kill-port 5205",
+    "clean-start": "npm run kill-ports && npm run dev",
+
+    "build:all": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "ng build",
+    "build:backend": "cd ../ToDoList && dotnet build",
+    
+    "test:all": "concurrently \"npm run test:backend\" \"npm run test:frontend\"",
+    "test:frontend": "ng test",
+    "test:backend": "cd ../ToDoList && dotnet test"
   },
+
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
@@ -23,10 +39,13 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.3.13",
+    "@angular/cdk": "^20.2.14",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
     "@angular/core": "^20.3.0",
     "@angular/forms": "^20.3.0",
+    "@angular/material": "^20.2.14",
     "@angular/platform-browser": "^20.3.0",
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
@@ -42,6 +61,7 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "concurrently": "^9.2.1",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
