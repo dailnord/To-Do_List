@@ -1,0 +1,35 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #fafafa;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.main-content {
+  min-height: calc(100vh - 64px);
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Utilidades para días restantes */
+.days-urgent {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.days-warning {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.days-ok {
+  color: #4caf50;
+  font-weight: bold;
+}
