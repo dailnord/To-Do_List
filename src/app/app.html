@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <span>Task Manager</span>
+  <span class="spacer"></span>
+  <nav>
+    <a mat-button routerLink="/tasks" routerLinkActive="active">
+      <mat-icon>list</mat-icon>
+      Task List
+    </a>
+    <a mat-button routerLink="/tasks/new" routerLinkActive="active">
+      <mat-icon>add</mat-icon>
+      New Task
+    </a>
+  </nav>
+</mat-toolbar>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

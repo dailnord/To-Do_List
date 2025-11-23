@@ -1,0 +1,260 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  /* Agregar estas propiedades para controlar el overflow */
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevenir desbordamiento horizontal */
+}
+
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* Agregar para control interno */
+  box-sizing: border-box;
+}
+
+.card-header {
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  /* Prevenir desbordamiento de texto */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card-content {
+  padding: 16px 0;
+  /* Agregar para control interno */
+  box-sizing: border-box;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px 0;
+  /* Agregar para control interno */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Agregar para control de ancho */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-field.outline {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  transition: border-color 0.3s;
+  /* Asegurar que no exceda el ancho del contenedor */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form-field.outline:focus-within {
+  border-color: #3f51b5;
+  border-width: 2px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 4px;
+  font-weight: 500;
+  /* Prevenir desbordamiento */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* Agregar para control de ancho */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 8px 0;
+  /* Agregar para prevenir desbordamiento */
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+  /* Mejorar el manejo de texto largo */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+.suffix-icon {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  position: absolute;
+  right: 0;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+  /* Prevenir desbordamiento */
+  word-wrap: break-word;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 48%;
+  /* Agregar para responsividad */
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  /* Agregar para control de ancho */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Prevenir desbordamiento de texto */
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #3f51b5;
+  border: 1px solid #3f51b5;
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: rgba(63, 81, 181, 0.04);
+}
+
+.btn-primary {
+  background: #3f51b5;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #303f9f;
+}
+
+.actions-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 0;
+  margin-top: 20px;
+  /* Agregar para responsividad */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Media queries mejoradas */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+  
+  .form-card {
+    padding: 16px;
+    margin: 0 10px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .half-width {
+    width: 100%;
+  }
+  
+  .actions-right {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 12px;
+    margin: 0 5px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+  }
+  
+  .form-field.outline {
+    padding: 8px;
+  }
+  
+  .form-input, .form-textarea, .form-select {
+    font-size: 14px;
+  }
+}

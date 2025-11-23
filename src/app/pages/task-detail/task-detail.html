@@ -1,0 +1,54 @@
+<div class="detail-container" *ngIf="task">
+  <mat-card class="detail-card">
+    <mat-card-header>
+      <div class="header-content">
+        <button mat-icon-button (click)="goBack()" class="back-button">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <div class="title-section">
+          <mat-card-title>{{ task.title }}</mat-card-title>
+        </div>
+        <button mat-raised-button color="accent" (click)="editTask()">
+          <mat-icon>edit</mat-icon>
+          Edit
+        </button>
+      </div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="task-details">
+
+        <div class="detail-section">
+          <h3>Description</h3>
+          <p>{{ task.description }}</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <strong>Status:</strong>
+            <mat-chip [color]="getStatusColor(task.isCompleted)" selected>
+              {{ task.isCompleted ? 'Mark Pending' : 'Mark Completed' }}
+            </mat-chip>
+          </div>
+
+          <div class="info-item">
+            <strong>Due date:</strong>
+            <span>{{ task.dueDate | date:'dd/MM/yyyy' }}</span>
+          </div>
+
+          <div class="info-item">
+            <strong>Days remaining:</strong>
+            <span [class]="getDaysRemainingClass(task.dueDate)">
+              {{ getDaysRemaining(task.dueDate) }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="!task" class="loading">
+  <mat-spinner></mat-spinner>
+  <p>Loading task...</p>
+</div>
