@@ -1,0 +1,72 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.completed-chip {
+  background-color: #4caf50 !important;
+  margin-top: 10px;
+}
+
+.pending-chip {
+  background-color: #ff9800 !important;
+  margin-top: 10px;
+}
+
+.custom-button {
+  background-color: #3f51b5 !important;
+  margin-top: 10px;
+}
+
+.task-card {
+  height: 100%;
+}
+
+.priority-alta {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.priority-media {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.priority-baja {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+mat-chip {
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}

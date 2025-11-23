@@ -1,0 +1,73 @@
+<div class="form-container">
+  <div class="form-card">
+    <div class="card-header">
+      <div class="card-title">
+        {{ isEditMode ? 'Edit Task' : 'New Task' }}
+      </div>
+    </div>
+
+    <div class="card-content">
+      <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+        <div class="form-fields">
+
+          <div class="form-field full-width outline">
+            <label class="form-label">Title</label>
+            <div class="input-container">
+              <input type="text" formControlName="title" placeholder="Enter task title" class="form-input">
+              <span class="suffix-icon">title</span>
+            </div>
+            <div class="error-message" *ngIf="title?.hasError('required') && title?.touched">
+              Title is required
+            </div>
+            <div class="error-message" *ngIf="title?.hasError('minlength') && title?.touched">
+              Minimum 3 characters required
+            </div>
+          </div>
+
+          <div class="form-field full-width outline">
+            <label class="form-label">Description</label>
+            <div class="input-container">
+              <textarea formControlName="description" placeholder="Describe the task" rows="4" class="form-textarea">
+              </textarea>
+            </div>
+            <div class="error-message" *ngIf="description?.hasError('required') && description?.touched">
+              Description is required
+            </div>
+            <div class="error-message" *ngIf="description?.hasError('minlength') && description?.touched">
+              Minimum 10 characters required
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-field half-width outline">
+              <label class="form-label">Completion Status</label>
+              <div class="input-container">
+                <select formControlName="isCompleted" class="form-select">
+                  <option [value]="false">Pending</option>
+                  <option [value]="true">Completed</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field half-width outline">
+              <label class="form-label">Due Date</label>
+              <div class="input-container">
+                <input type="date" formControlName="dueDate" class="form-input">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions-right">
+          <button type="button" class="btn btn-outline" (click)="onCancel()">
+            Cancel
+          </button>
+          <button type="submit" class="btn btn-primary"
+                 [disabled]="!taskForm.valid">
+            {{ isEditMode ? 'Update' : 'Create' }} Task
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
