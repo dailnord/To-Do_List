@@ -1,13 +1,32 @@
-# ToDoListApp
+# ToDoListApp: instructions to Run the Application Locally
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11. and .NET Core 9
+
+## Prerequisites
+
+Node.js and npm: Node 16+ or 18+ recommended. Check your versions with:
+
+```bash
+node -v
+npm -v
+```
+Git: Required to clone the repository.
+
+```bash
+git clone https://github.com/dailnord/To-Do_List.git
+cd To-Do_List
+```
+## Install dependencies
+
+```bash
+npm install
+```
 
 ## Development server
-
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run dev
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
@@ -46,13 +65,16 @@ ng test
 
 ## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+Prerequisites for end-to-end (e2e) testing: Always run the application first with ```npm run dev``` and when it is available run:
 
 ```bash
-ng e2e
+npx cypress open
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+This opens the Cypress graphical interface where you can:
+- View all available tests
+- Run tests individually
+- View real-time executions
+- Perform visual debugging
 
 ## Additional Resources
 
