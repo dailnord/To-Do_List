@@ -21,14 +21,7 @@ cd REPO
 ```bash
 npm install
 ```
-If installation fails:
 
-```bash
-rd /s /q node_modules
-del package-lock.json
-npm install
-
-```
 ## Development server
 To start a local development server, run:
 
