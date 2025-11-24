@@ -13,8 +13,8 @@ npm -v
 Git: Required to clone the repository.
 
 ```bash
-git clone https://github.com/USER/REPO.git
-cd REPO
+git clone https://github.com/dailnord/To-Do_List.git
+cd To-Do_List
 ```
 ## Install dependencies
 
