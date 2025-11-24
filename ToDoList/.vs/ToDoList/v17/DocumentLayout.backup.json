@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\",
+  "WorkspaceRootPath": "D:\\MY CODE\\To-Do_List\\ToDoList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\github\\to-do_list\\todolist\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\to-do_list\\todolist\\todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\github\\to-do_list\\todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\github\\to-do_list\\todolist\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\github\\to-do_list\\todolist\\models\\taskdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\to-do_list\\todolist\\models\\taskdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:models\\taskdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\github\\to-do_list\\todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\to-do_list\\todolist\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\github\\to-do_list\\todolist\\todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|d:\\my code\\to-do_list\\todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98968DCA-9302-4670-B928-BCFBE126DCEB}|ToDoList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,8 +25,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 203,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 251,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,76 +38,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TasksController.cs",
-              "DocumentMoniker": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Controllers\\TasksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
-              "ToolTip": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Controllers\\TasksController.cs",
-              "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwGAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:44:11.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T19:33:34.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TaskDbContext.cs",
-              "DocumentMoniker": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Models\\TaskDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\TaskDbContext.cs",
-              "ToolTip": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Models\\TaskDbContext.cs",
-              "RelativeToolTip": "Models\\TaskDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T19:26:39.213Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Task.cs",
-              "DocumentMoniker": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Models\\Task.cs",
-              "RelativeDocumentMoniker": "Models\\Task.cs",
-              "ToolTip": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\Models\\Task.cs",
-              "RelativeToolTip": "Models\\Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T18:34:35.326Z",
+              "Title": "ToDoList.csproj",
+              "DocumentMoniker": "D:\\MY CODE\\To-Do_List\\ToDoList\\ToDoList.csproj",
+              "RelativeDocumentMoniker": "ToDoList.csproj",
+              "ToolTip": "D:\\MY CODE\\To-Do_List\\ToDoList\\ToDoList.csproj",
+              "RelativeToolTip": "ToDoList.csproj",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-24T08:59:07.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-20T19:44:33.718Z"
+              "DocumentIndex": 1,
+              "Title": "TaskDbContext.cs",
+              "DocumentMoniker": "D:\\MY CODE\\To-Do_List\\ToDoList\\Models\\TaskDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\TaskDbContext.cs",
+              "ToolTip": "D:\\MY CODE\\To-Do_List\\ToDoList\\Models\\TaskDbContext.cs",
+              "RelativeToolTip": "Models\\TaskDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T08:41:12.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ToDoList.csproj",
-              "DocumentMoniker": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\ToDoList.csproj",
-              "RelativeDocumentMoniker": "ToDoList.csproj",
-              "ToolTip": "D:\\MY CODE\\GITHUB\\To-Do_List\\ToDoList\\ToDoList.csproj",
-              "RelativeToolTip": "ToDoList.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-20T19:55:08.073Z"
+              "DocumentIndex": 2,
+              "Title": "Task.cs",
+              "DocumentMoniker": "D:\\MY CODE\\To-Do_List\\ToDoList\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "Models\\Task.cs",
+              "ToolTip": "D:\\MY CODE\\To-Do_List\\ToDoList\\Models\\Task.cs",
+              "RelativeToolTip": "Models\\Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T08:41:06.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MY CODE\\To-Do_List\\ToDoList\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\MY CODE\\To-Do_List\\ToDoList\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T19:33:34.815Z"
             },
             {
               "$type": "Bookmark",
@@ -124,7 +92,7 @@
           ]
         },
         {
-          "DockedWidth": 197,
+          "DockedWidth": 149,
           "SelectedChildIndex": -1,
           "Children": [
             {
