@@ -1,13 +1,39 @@
-# ToDoListApp
+# ToDoListApp: instructions to Run the Application Locally
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11. and .NET Core 9
 
+## Prerequisites
+
+Node.js and npm: Node 16+ or 18+ recommended. Check your versions with:
+
+```bash
+node -v
+npm -v
+```
+Git: Required to clone the repository.
+
+```bash
+git clone https://github.com/USER/REPO.git
+cd REPO
+```
+## Install dependencies
+
+```bash
+npm install
+```
+If installation fails:
+
+```bash
+rd /s /q node_modules
+del package-lock.json
+npm install
+
+```
 ## Development server
-
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run dev
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
