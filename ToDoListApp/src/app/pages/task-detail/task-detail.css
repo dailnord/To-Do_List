@@ -66,6 +66,22 @@
 .days-warning { color: #ff9800; font-weight: bold; }
 .days-ok { color: #4caf50; font-weight: bold; }
 
+.days-remaining {
+  color: #2e7d32; /* Green for future dates */
+}
+
+.due-today {
+  color: #ff9800; /* Orange for today */
+}
+
+.overdue {
+  color: #d32f2f; /* Red for overdue */
+}
+
+.no-due-date {
+  color: #757575; /* Gray for no due date */
+}
+
 .loading {
   display: flex;
   flex-direction: column;

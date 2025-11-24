@@ -5,3 +5,6 @@ export interface Task {
   dueDate?: Date;
   isCompleted: boolean;
 }
+
+export type CreateTask = Omit<Task, 'id'>;
+export type UpdateTask = Partial<CreateTask>;

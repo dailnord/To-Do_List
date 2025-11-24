@@ -22,21 +22,6 @@
   margin-top: 20px;
 }
 
-.completed-chip {
-  background-color: #4caf50 !important;
-  margin-top: 10px;
-}
-
-.pending-chip {
-  background-color: #ff9800 !important;
-  margin-top: 10px;
-}
-
-.custom-button {
-  background-color: #3f51b5 !important;
-  margin-top: 10px;
-}
-
 .task-card {
   height: 100%;
 }

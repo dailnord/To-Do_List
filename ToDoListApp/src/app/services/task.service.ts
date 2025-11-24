@@ -20,14 +20,12 @@ export class TaskService {
     });
   }
 
-  // Método centralizado para obtener y parsear tareas
   private getTasksFromApi(): Observable<Task[]> {
     return this.http.get<any[]>(this.apiUrl).pipe(
       map(tasks => tasks.map(task => this.parseTask(task)))
     );
   }
 
-  // Parsear una tarea individual
   private parseTask(task: any): Task {
     return {
       id: task.id,
@@ -43,39 +41,26 @@ export class TaskService {
   }
 
   getById(id: number): Observable<Task> {
-  console.log('🔍 [Service] Getting task by ID:', id);
-  
-  return new Observable(observer => {
-    this.http.get<any>(`${this.apiUrl}/${id}`).pipe(
-      map(rawTask => {
-        console.log('📦 [Service] Raw response from API:', rawTask);
-        console.log('📦 [Service] Raw dueDate:', rawTask?.dueDate, 'Type:', typeof rawTask?.dueDate);
-        
-        const parsedTask = this.parseDate(rawTask);
-        console.log('🔄 [Service] Parsed task:', parsedTask);
-        console.log('🔄 [Service] Parsed dueDate:', parsedTask.dueDate, 'Type:', typeof parsedTask.dueDate);
-        
-        return parsedTask;
-      })
-    ).subscribe({
-      next: (task) => {
-        console.log('✅ [Service] Task ready to send to component:', task);
-        observer.next(task);
-        observer.complete();
-      },
-      error: (error) => {
-        console.error('❌ [Service] Error getting task:', error);
-        observer.error(error);
-      }
+    return new Observable(observer => {
+      this.http.get<any>(`${this.apiUrl}/${id}`).pipe(
+        map(rawTask => {
+          const parsedTask = this.parseDate(rawTask);
+          return parsedTask;
+        })
+      ).subscribe({
+        next: (task) => {
+          observer.next(task);
+          observer.complete();
+        },
+        error: (error) => {
+          observer.error(error);
+        }
+      });
     });
-  });
 }
 
 private parseDate(task: any): Task {
-  console.log('🛠️ [Service] Parsing task:', task);
-  
   if (!task) {
-    console.warn('🛠️ [Service] Task is null or undefined');
     return task;
   }
   
@@ -86,8 +71,6 @@ private parseDate(task: any): Task {
     isCompleted: task.isCompleted,
     dueDate: task.dueDate ? new Date(task.dueDate) : undefined
   };
-  
-  console.log('🛠️ [Service] After parsing:', parsedTask);
   return parsedTask;
 }
 

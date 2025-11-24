@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  /* Agregar estas propiedades para controlar el overflow */
   box-sizing: border-box;
   max-width: 100%;
-  overflow-x: hidden; /* Prevenir desbordamiento horizontal */
+  overflow-x: hidden;
 }
 
 .form-card {
@@ -15,7 +14,6 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  /* Agregar para control interno */
   box-sizing: border-box;
 }
 
@@ -29,14 +27,12 @@
   font-size: 24px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.87);
-  /* Prevenir desbordamiento de texto */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .card-content {
   padding: 16px 0;
-  /* Agregar para control interno */
   box-sizing: border-box;
 }
 
@@ -45,7 +41,6 @@
   flex-direction: column;
   gap: 16px;
   margin: 20px 0;
-  /* Agregar para control interno */
   width: 100%;
   box-sizing: border-box;
 }
@@ -54,7 +49,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  /* Agregar para control de ancho */
   width: 100%;
   box-sizing: border-box;
 }
@@ -64,7 +58,6 @@
   border-radius: 4px;
   padding: 12px;
   transition: border-color 0.3s;
-  /* Asegurar que no exceda el ancho del contenedor */
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -79,7 +72,6 @@
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 4px;
   font-weight: 500;
-  /* Prevenir desbordamiento */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -89,7 +81,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  /* Agregar para control de ancho */
   width: 100%;
   box-sizing: border-box;
 }
@@ -101,7 +92,6 @@
   background: transparent;
   font-size: 16px;
   padding: 8px 0;
-  /* Agregar para prevenir desbordamiento */
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -109,7 +99,6 @@
 .form-textarea {
   resize: vertical;
   min-height: 80px;
-  /* Mejorar el manejo de texto largo */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -139,7 +128,6 @@
   color: #f44336;
   font-size: 12px;
   margin-top: 4px;
-  /* Prevenir desbordamiento */
   word-wrap: break-word;
 }
 
@@ -149,7 +137,6 @@
 
 .half-width {
   width: 48%;
-  /* Agregar para responsividad */
   box-sizing: border-box;
 }
 
@@ -157,7 +144,6 @@
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  /* Agregar para control de ancho */
   width: 100%;
   box-sizing: border-box;
 }
@@ -169,7 +155,6 @@
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s;
-  /* Prevenir desbordamiento de texto */
   white-space: nowrap;
   min-width: fit-content;
 }
@@ -204,12 +189,10 @@
   gap: 8px;
   padding: 16px 0;
   margin-top: 20px;
-  /* Agregar para responsividad */
   flex-wrap: wrap;
   width: 100%;
 }
 
-/* Media queries mejoradas */
 @media (max-width: 768px) {
   .form-container {
     padding: 10px;

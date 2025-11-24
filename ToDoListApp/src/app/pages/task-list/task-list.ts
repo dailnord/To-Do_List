@@ -30,7 +30,7 @@ import { Task } from '../../models/task.model';
 export class TaskListComponent implements OnInit {
   tasks: Task[] = [];
   isLoading = true;
-  displayedColumns: string[] = ['title', 'actions', 'dueDate', 'status',];
+  displayedColumns: string[] = ['title', 'dueDate', 'status', 'actions'];
 
   constructor(
     private taskService: TaskService,
